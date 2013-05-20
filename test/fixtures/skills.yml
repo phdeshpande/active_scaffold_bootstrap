@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: 
+  years_of_xp: 1.5
+
+two:
+  name: 
+  years_of_xp: 1.5

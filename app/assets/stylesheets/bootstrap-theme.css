@@ -1,0 +1,74 @@
+/*
+ ActiveScaffold Bootstrap Theme
+ (c) 2013 Purushottam Deshpande <purushottam@bitlasoft.com>
+
+ ActiveScaffold is freely distributable under the terms of an MIT-style license.
+
+ For details, see the ActiveScaffold web site: http://www.activescaffold.com/
+
+*/
+
+/* Header
+   ======================== */
+
+.bootstrap-theme .active-scaffold-header {
+background-color: #FFFFFF;
+}
+
+.bootstrap-theme .active-scaffold-header h2 {
+/*color: #555555;*/
+padding: 2px 5px 4px 5px;
+}
+
+.bootstrap-theme .active-scaffold-header div.actions a {
+color: #fff;
+}
+
+.bootstrap-theme .active-scaffold-header div.actions a.disabled {
+color: #fff;
+opacity: 0.5;
+}
+
+.bootstrap-theme .active-scaffold-header div.actions a:hover {
+background-color: #378CDF;
+}
+
+.bootstrap-theme .active-scaffold .active-scaffold-header,
+.bootstrap-theme .active-scaffold .active-scaffold-footer {
+background-color: #1F7F00;
+background: transparent;
+}
+
+.bootstrap-theme .active-scaffold .active-scaffold-header h2 {
+color: #444;
+}
+
+.bootstrap-theme .active-scaffold .active-scaffold-header div.actions a,
+.bootstrap-theme .active-scaffold .active-scaffold-header div.actions a:visited {
+color: #06c;
+}
+
+.bootstrap-theme .active-scaffold .active-scaffold-header div.actions a:hover {
+background-color: #ff8;
+}
+
+/* Footer
+   ========================== */
+
+.bootstrap-theme .active-scaffold-footer {
+background-color: #005CB8;
+color: #ccc;
+}
+
+.bootstrap-theme .active-scaffold-footer .active-scaffold-records {
+margin-left: 5px;
+}
+
+.bootstrap-theme .active-scaffold-footer a,
+.bootstrap-theme .active-scaffold-footer a:visited {
+color: #fff;
+}
+
+.bootstrap-theme .active-scaffold-footer a:hover {
+background-color: #378CDF;
+}

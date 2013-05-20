@@ -1,0 +1,10 @@
+Use this README file to introduce your application and point to useful places in the API for learning more.
+Run "rake doc:app" to generate API documentation for your models, controllers, helpers, and libraries.
+
+
+Starting with AS-Bootstrap Implementation:
+-----------------------------------------
+1. Download AS source code from github
+2. Extract it ("activescaffold-master")
+3. $ rails new activescaffold-master
+   This should prompt you for overwriting some of the files. Make sure you do not overwrite the files.
