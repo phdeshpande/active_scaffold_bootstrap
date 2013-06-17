@@ -14,4 +14,4 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require active_scaffold
-//= require_tree .
+// require_tree .
