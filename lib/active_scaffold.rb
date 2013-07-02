@@ -25,7 +25,7 @@ module ActiveScaffold
   autoload :Bridges, 'active_scaffold/bridges'
 
   mattr_accessor :stylesheets
-  self.stylesheets = []
+  self.stylesheets = ["bootstrap-theme.less", "bootstrap-theme-base-config.less"]
   mattr_accessor :javascripts
   self.javascripts = []
 

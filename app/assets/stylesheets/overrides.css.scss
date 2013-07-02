@@ -1,0 +1,28 @@
+/* use with AS 3.2 */
+@import "bootstrap_and_overrides";
+
+.active-scaffold-header div.actions {
+    top: 0;
+}
+
+.active-scaffold {
+    input[type="submit"], input[type="reset"], button {
+        @extend .btn;
+        @extend .btn-primary;
+        margin-top: 0;
+        padding-top: 2px;
+        padding-bottom: 1px;
+    }
+    form.as_form.search {
+        input, select, textarea {
+            margin-bottom: 0;
+        }
+    }
+    a.as_cancel {
+        vertical-align: middle;
+    }
+    .active-scaffold ol {
+        display: table;
+        margin-left: 0;
+    }
+}

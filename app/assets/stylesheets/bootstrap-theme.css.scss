@@ -1,0 +1,152 @@
+/*
+ ActiveScaffold Bootstrap Theme
+ (c) 2013 Purushottam Deshpande <purushottam@bitlasoft.com>
+
+ ActiveScaffold is freely distributable under the terms of an MIT-style license.
+
+ For details, see the ActiveScaffold web site: http://www.activescaffold.com/
+
+*/
+@import "bootstrap_and_overrides";
+@import "bootstrap-theme-base-config";
+
+/* Table Listing
+   ======================== */
+table {
+  // @extend .table;
+  @extend .table-bordered;
+  @extend .table-hover;
+}  
+
+.bootstrap-theme {
+  .active-scaffold-header {
+    h2{color: $title-color;}
+    div.actions {
+      padding-right: 18px; 
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      a{
+        color: #333333;
+        letter-spacing: 0.05em;
+        &:hover {color: #333333; text-decoration: none;}
+        &:visited {color: #333333;}
+      }
+    }
+  }
+  
+}
+
+.bootstrap-theme.active-scaffold {
+  th {
+    background-color: #FFFFFF; 
+    color: #333333;
+    a {
+      background-color: #FFFFFF; 
+      color: #333333; 
+      font-size: 14px; 
+      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+      &:hover{text-decoration: none; }
+    }
+    p {background-color: #FFFFFF; color: #333333; font-size: 14px;}
+    
+  }
+  tr.record td{
+    background: #FFFFFF;
+    .sorted{
+      background: #ECECEC;
+      border-bottom-color: #ECECEC;
+    }
+  }
+  th.asc a, th.asc a:hover, th.desc a, th.desc a:hover, th.loading a, th.loading a:hover{background-color: #EEE;}
+}
+
+/* Remove borders for nested tables */
+.active-scaffold tr.record td.actions table {
+  border: 0px;
+}
+
+
+/*
+ * Views
+ **************************************/
+.bootstrap-theme.active-scaffold .new-view.view,.bootstrap-theme.active-scaffold .edit-view.view,.bootstrap-theme.active-scaffold .show-view.view{
+  @extend .modal;
+  .form-footer{@extend .modal-footer;}
+}
+
+
+/* Views: Edit */
+.bootstrap-theme.active-scaffold {
+  a{
+    &:hover{background: none;}
+  }
+  h4, h5{color: $title-color; font-size: 20px; margin: 5px 0px; @extend .modal-header;}
+  .view{background: #F7F7F9; border-color: #E1E1E1;}
+  .form{padding: 10px;}
+}
+
+/* 
+ * Form Elements
+ ***************************************** */
+.bootstrap-theme.active-scaffold {
+  select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], 
+  input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], 
+  input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], 
+  .uneditable-input{
+    @extend input;
+  }
+  select{height: 30px; @extend select;}
+  input[type="submit"]{@extend .btn; @extend .btn-primary; margin-top: -8px;}
+}
+
+/* Icon - Close */
+.bootstrap-theme.active-scaffold a.inline-adapter-close{
+  background: url("/assets/twitter/bootstrap/glyphicons-halflings.png") no-repeat -312px 0px;
+}
+
+.bootstrap-theme.active-scaffold label, .active-scaffold .show-view dt{font-size: 13px; line-height: 22px;}
+
+/*
+ * Pagination
+ ************************/
+.bootstrap-theme.active-scaffold {
+ .active-scaffold-pagination{
+   @extend .pagination;
+   margin: 20px 5px;
+   a { border: 1px solid #DDDDDD; }
+   a.as_paginate.previous{border-radius: 4px 0 0 4px;}
+   a.as_paginate.next{border-radius: 0 4px 4px 0;}
+    
+   span.current{background-color: #F5F5F5; border-left: 1px solid #DDDDDD; color: #999999;}
+   img.loading-indicator{float: left; position: relative; top: 32%;}
+   
+ } 
+}
+
+/* 
+ * Messages 
+ * ***********************/
+.bootstrap-theme.active-scaffold {
+ .filtered-message{@extend .alert; @extend .alert-info;} 
+}
+
+/* 
+ * LINKS
+ ******************/
+.bootstrap-theme.active-scaffold a {
+  color: $link-color;
+}
+
+/* 
+ * ICONS
+ ******************/ 
+.bootstrap-theme .active-scaffold-header div.actions a.new, .bootstrap-theme.active-scaffold-header div.actions a.new_existing{
+	background: url("/assets/twitter/bootstrap/glyphicons-halflings.png") no-repeat 10px -89px;
+	width: 0px;
+	margin-right: 70px;
+}
+
+.bootstrap-theme .active-scaffold-header div.actions a.show_search{
+	background: url("/assets/twitter/bootstrap/glyphicons-halflings.png") no-repeat -40px 7px;
+	width: 0px;
+	margin-right: 50px;
+}
