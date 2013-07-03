@@ -115,10 +115,9 @@ table {
    a { border: 1px solid #DDDDDD; }
    a.as_paginate.previous{border-radius: 4px 0 0 4px;}
    a.as_paginate.next{border-radius: 0 4px 4px 0;}
-    
    span.current{background-color: #F5F5F5; border-left: 1px solid #DDDDDD; color: #999999;}
    img.loading-indicator{float: left; position: relative; top: 32%;}
-   
+   span:first-of-type{border-radius: 4px;}
  } 
 }
 
@@ -126,7 +125,9 @@ table {
  * Messages 
  * ***********************/
 .bootstrap-theme.active-scaffold {
- .filtered-message{@extend .alert; @extend .alert-info;} 
+ .error-message, .filtered-message, .messages-container .errorExplanation{@extend .alert; @extend .alert-error;} 
+ // @extend .alert.close;
+ .errorExplanation h2 {background-color: transparent; line-height: 15px;}
 }
 
 /* 
